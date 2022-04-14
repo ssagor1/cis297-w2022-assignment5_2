@@ -15,3 +15,12 @@ C:\Users\shahr\Source\Repos\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\C
 C:\Users\shahr\Source\Repos\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.csproj.CoreCompileInputs.cache
 C:\Users\shahr\Source\Repos\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.exe
 C:\Users\shahr\Source\Repos\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.pdb
+C:\Users\shahr\Source\Repos\ssagor1\cis297-w2022-assignment5_2\CalculatorGUI\bin\Debug\CalculatorGUI.exe
+C:\Users\shahr\Source\Repos\ssagor1\cis297-w2022-assignment5_2\CalculatorGUI\bin\Debug\CalculatorGUI.pdb
+C:\Users\shahr\Source\Repos\ssagor1\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.csproj.AssemblyReference.cache
+C:\Users\shahr\Source\Repos\ssagor1\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.CalculatorGUIForm.resources
+C:\Users\shahr\Source\Repos\ssagor1\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.Properties.Resources.resources
+C:\Users\shahr\Source\Repos\ssagor1\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.csproj.GenerateResource.cache
+C:\Users\shahr\Source\Repos\ssagor1\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.csproj.CoreCompileInputs.cache
+C:\Users\shahr\Source\Repos\ssagor1\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.exe
+C:\Users\shahr\Source\Repos\ssagor1\cis297-w2022-assignment5_2\CalculatorGUI\obj\Debug\CalculatorGUI.pdb

@@ -12,17 +12,19 @@ namespace CalculatorGUI
 {
 
     public partial class CalculatorGUIForm : Form
-   {
+    {
         double FirstNumber;
+        double SecondNumber;
+
         string Operation;
         public CalculatorGUIForm()
-      {
-         InitializeComponent();
-      }
+        {
+            InitializeComponent();
+        }
 
         private void button0_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + "";
+            textBox1.Text = textBox1.Text + "0";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -136,21 +138,21 @@ namespace CalculatorGUI
         private void button_plus_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(textBox1.Text);
-           textBox1.Text = "";
+            textBox1.Text = "";
             Operation = "+";
         }
 
         private void button_minus_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(textBox1.Text);
-             textBox1.Text = "";
+            textBox1.Text = "";
             Operation = "-";
         }
 
         private void button_times_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(textBox1.Text);
-           textBox1.Text = "";
+            textBox1.Text = "";
             Operation = "*";
         }
 
@@ -173,10 +175,9 @@ namespace CalculatorGUI
 
         private void button_equal_Click(object sender, EventArgs e)
         {
-            double SecondNumber;
             double Result;
-
             SecondNumber = Convert.ToDouble(textBox1.Text);
+
 
             if (Operation == "+")
             {
@@ -202,7 +203,14 @@ namespace CalculatorGUI
                 textBox1.Text = Convert.ToString(Result);
                 FirstNumber = Result;
             }
+            if(Operation == "%")
+            {
+                Result = (FirstNumber % SecondNumber);
+                textBox1.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
 
+           
             if (Operation == "/")
             {
                 if (SecondNumber == 0)
@@ -212,15 +220,21 @@ namespace CalculatorGUI
                 }
                 else
                 {
+
                     Result = (FirstNumber / SecondNumber);
                     textBox1.Text = Convert.ToString(Result);
                     FirstNumber = Result;
                 }
             }
 
+            if (Operation == "LogSB")
+            {
 
 
-
+                Result = Math.Log(FirstNumber, SecondNumber);
+                textBox1.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
 
         }
 
@@ -249,8 +263,58 @@ namespace CalculatorGUI
             Operation = "^";
 
         }
+
+        private void reverseString_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = ReverseString(textBox1.Text);
+
+            string ReverseString(string s)
+            {
+                char[] arr = s.ToCharArray();
+                Array.Reverse(arr);
+                return new string(arr);
+            }
+        }
+
+        private void removeWhitespace_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = RemoveWhitespace(textBox1.Text);
+            string RemoveWhitespace(string str)
+            {
+                str = str.Replace(" ", String.Empty);
+                return str;
+            }
+
+
+        }
+
+        private void logSB_Click(object sender, EventArgs e)
+        {
+            //textBox1.Text = "Log(" + FirstNumber + "," + SecondNumber + ")";
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "";
+            Operation = "LogSB";
+
+        }
+
+        private void minmax_Click(object sender, EventArgs e)
+        {
+
+           
+
+        }
+
+        private void remainder_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "";
+            Operation = "%";
+        }
+
+      
     }
 }
+
 
 /**************************************************************************
  * (C) Copyright 1992-2017 by Deitel & Associates, Inc. and               *

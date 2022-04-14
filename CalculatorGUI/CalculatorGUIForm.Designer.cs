@@ -48,13 +48,13 @@
             this.button_c = new System.Windows.Forms.Button();
             this.removeWhitespace = new System.Windows.Forms.Button();
             this.reverseString = new System.Windows.Forms.Button();
-            this.quotientRemainder = new System.Windows.Forms.Button();
             this.logarithm = new System.Windows.Forms.Button();
             this.logSB = new System.Windows.Forms.Button();
             this.minmax = new System.Windows.Forms.Button();
             this.spower = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.squareroot = new System.Windows.Forms.Button();
+            this.remainder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -243,6 +243,7 @@
             this.removeWhitespace.TabIndex = 18;
             this.removeWhitespace.Text = "Remove Whitespace";
             this.removeWhitespace.UseVisualStyleBackColor = true;
+            this.removeWhitespace.Click += new System.EventHandler(this.removeWhitespace_Click);
             // 
             // reverseString
             // 
@@ -252,15 +253,7 @@
             this.reverseString.TabIndex = 19;
             this.reverseString.Text = "Reverse String";
             this.reverseString.UseVisualStyleBackColor = true;
-            // 
-            // quotientRemainder
-            // 
-            this.quotientRemainder.Location = new System.Drawing.Point(23, 348);
-            this.quotientRemainder.Name = "quotientRemainder";
-            this.quotientRemainder.Size = new System.Drawing.Size(75, 41);
-            this.quotientRemainder.TabIndex = 20;
-            this.quotientRemainder.Text = "Quotient Remainder";
-            this.quotientRemainder.UseVisualStyleBackColor = true;
+            this.reverseString.Click += new System.EventHandler(this.reverseString_Click);
             // 
             // logarithm
             // 
@@ -280,6 +273,7 @@
             this.logSB.TabIndex = 22;
             this.logSB.Text = "Logarithm SB";
             this.logSB.UseVisualStyleBackColor = true;
+            this.logSB.Click += new System.EventHandler(this.logSB_Click);
             // 
             // minmax
             // 
@@ -289,6 +283,7 @@
             this.minmax.TabIndex = 23;
             this.minmax.Text = "Min Max";
             this.minmax.UseVisualStyleBackColor = true;
+            this.minmax.Click += new System.EventHandler(this.minmax_Click);
             // 
             // spower
             // 
@@ -319,18 +314,28 @@
             this.squareroot.UseVisualStyleBackColor = true;
             this.squareroot.Click += new System.EventHandler(this.squareroot_Click);
             // 
+            // remainder
+            // 
+            this.remainder.Location = new System.Drawing.Point(22, 348);
+            this.remainder.Name = "remainder";
+            this.remainder.Size = new System.Drawing.Size(77, 41);
+            this.remainder.TabIndex = 27;
+            this.remainder.Text = "Remainder";
+            this.remainder.UseVisualStyleBackColor = true;
+            this.remainder.Click += new System.EventHandler(this.remainder_Click);
+            // 
             // CalculatorGUIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(285, 476);
+            this.Controls.Add(this.remainder);
             this.Controls.Add(this.squareroot);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.spower);
             this.Controls.Add(this.minmax);
             this.Controls.Add(this.logSB);
             this.Controls.Add(this.logarithm);
-            this.Controls.Add(this.quotientRemainder);
             this.Controls.Add(this.reverseString);
             this.Controls.Add(this.removeWhitespace);
             this.Controls.Add(this.button_c);
@@ -381,13 +386,13 @@
         private System.Windows.Forms.Button button_c;
         private System.Windows.Forms.Button removeWhitespace;
         private System.Windows.Forms.Button reverseString;
-        private System.Windows.Forms.Button quotientRemainder;
         private System.Windows.Forms.Button logarithm;
         private System.Windows.Forms.Button logSB;
         private System.Windows.Forms.Button minmax;
         private System.Windows.Forms.Button spower;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button squareroot;
+        private System.Windows.Forms.Button remainder;
     }
 }
 
